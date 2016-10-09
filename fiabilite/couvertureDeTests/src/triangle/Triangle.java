@@ -1,36 +1,62 @@
 package triangle;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.ArrayList;
+
 import com.google.common.base.Preconditions;
 
 public class Triangle {
-	private static double PRECISION = 0.001;
-	
+	private static double PRECISION = 0.001; // Imprécision tolérée pour les
+												// opérations sur les doubles
+												// (égalité, etc)
+
 	private enum TypeCotes {
-		SCALENE,ISOCELE,EQUILATERAL
+		SCALENE, ISOCELE, EQUILATERAL
 	}
+
 	private enum TypeAngles {
 		ACUTANGLE, OBTUSANGLE, RECTANGLE
 	}
-	
-	private double a,b,c;
-	private double alpha, beta, gamma;
-	
-	public Triangle (double a, double b, double c) {
-		Preconditions.checkArgument(a>0, "Side A must be of length > 0 but is of length %s", a);
-		Preconditions.checkArgument(b>0, "Side B must be of length > 0 but is of length %s", b);
-		Preconditions.checkArgument(c>0, "Side C must be of length > 0 but is of length %s", c);
+
+	private double a, b, c; // Longueur des côtés
+	private double alpha, beta, gamma; // Angles ; alpha est opposé au côté de
+										// longueur a, etc
+
+	public double getA() {
+		return a;
+	}
+
+	public double getB() {
+		return b;
+	}
+
+	public double getC() {
+		return c;
+	}
+
+	public Triangle(double a, double b, double c) {
+		Preconditions.checkArgument(a > 0, "Side A must be of length > 0 but is of length %s", a);
+		Preconditions.checkArgument(b > 0, "Side B must be of length > 0 but is of length %s", b);
+		Preconditions.checkArgument(c > 0, "Side C must be of length > 0 but is of length %s", c);
 		this.a = a;
 		this.b = b;
 		this.c = c;
-		
-		//Calcul des angles grace aux forumes alpha = arccos((bÂ²+cÂ²-aÂ²)/(2bc)) etc 
-		//alpha est l'angle opposÃ© au cÃ´tÃ© de longueur a etc
-		//pour passer de l'angle r en radian a d en degres :
-		//d = r * 180 / pi
-		this.alpha = Math.acos ((b*b + c*c - a*a)/(2*b*c))*180/Math.PI;
-		this.beta = Math.acos ((a*a + c*c - b*b)/(2*a*c))*180/Math.PI;
-		this.gamma = Math.acos ((a*a + b*b - c*c)/(2*a*b))*180/Math.PI;
-		
+
+		// Calcul des angles grace aux formules alpha = arccos((b²+c²-a²)/(2bc))
+		// etc
+		// alpha est l'angle opposé au côté de longueur a etc
+		// pour passer de l'angle r en radian a d en degres :
+		// d = r * 180 / pi
+		this.alpha = Math.acos((b * b + c * c - a * a) / (2 * b * c)) * 180 / Math.PI;
+		this.beta = Math.acos((a * a + c * c - b * b) / (2 * a * c)) * 180 / Math.PI;
+		this.gamma = Math.acos((a * a + b * b - c * c) / (2 * a * b)) * 180 / Math.PI;
+
 		Preconditions.checkState(strictlyInferior(alpha, 180) && strictlySuperior(alpha, 0),
 				"Angle alpha must be neither straight nor null ; he is %sÂ°. Check the fasability of your triangle.",
 				alpha);
@@ -41,12 +67,19 @@ public class Triangle {
 				"Angle gamma must be neither straight nor null ; he is %sÂ°. Check the fasability of your triangle.",
 				gamma);
 	}
-	
-	public int type () {	
+
+	/**
+	 * Infère le type du triangle en fonction de ses longues et angles
+	 * 
+	 * @return un int selon la corrspondance suivante : 0->scalène acutangle
+	 *         1->scalène obtusangle 2->scalène rectangle 3->isocèle acutangle
+	 *         4->isocèle obtusangle 5->isocèle rectangle 6->équilatéral
+	 */
+	public int type() {
 		int type = -1;
-		
+
 		switch (this.computeTypeCotes()) {
-		case SCALENE :
+		case SCALENE:
 			switch (this.computeTypeAngles()) {
 			case ACUTANGLE:
 				type = 0;
@@ -59,7 +92,6 @@ public class Triangle {
 				break;
 			default:
 				break;
-			
 			}
 			break;
 		case ISOCELE:
@@ -75,48 +107,150 @@ public class Triangle {
 				break;
 			default:
 				break;
-			
+
 			}
 			break;
 		case EQUILATERAL:
 			type = 6;
 			break;
 		default:
-			break; 
+			break;
 		}
-		
+
 		return type;
 	}
-	
-	private TypeCotes computeTypeCotes () {
-		if (equal(a,b) && equal(b,c)) {
+
+	/**
+	 * Infère le type d'un angle en fonction de la longueur de ses côtés :
+	 * équilatéral, isocèle ou scalène
+	 * 
+	 * @return le TypeCotes adéquat
+	 */
+	private TypeCotes computeTypeCotes() {
+		if (equal(a, b) && equal(b, c)) {
 			return TypeCotes.EQUILATERAL;
-		} else if (equal(a,b) || equal(b,c) || equal(a,c)) {
+		} else if (equal(a, b) || equal(b, c) || equal(a, c)) {
 			return TypeCotes.ISOCELE;
 		} else {
 			return TypeCotes.SCALENE;
 		}
 	}
-	
-	private TypeAngles computeTypeAngles () {
+
+	/**
+	 * Infère le type d'un angle en fonction de ses angles : obtusangle,
+	 * rectangle ou acutangle
+	 * 
+	 * @return le TypeAngles adéquat
+	 */
+	private TypeAngles computeTypeAngles() {
 		if (strictlySuperior(alpha, 90) || strictlySuperior(beta, 90) || strictlySuperior(gamma, 90)) {
 			return TypeAngles.OBTUSANGLE;
-		} else if (equal(alpha,90) || equal(beta,90) || equal(gamma,90)) {
+		} else if (equal(alpha, 90) || equal(beta, 90) || equal(gamma, 90)) {
 			return TypeAngles.RECTANGLE;
 		} else {
 			return TypeAngles.ACUTANGLE;
 		}
 	}
-	
+
+	/**
+	 * Vérifie l'égalité entre deux doubles en prenant en compte une imprécision
+	 * 
+	 * @param d1
+	 *            premier double
+	 * @param d2
+	 *            second double
+	 * @return true si et seulement si d1 et d2 sont égaux à PRECISION près
+	 */
 	private static boolean equal(double d1, double d2) {
-		return d1<d2+PRECISION && d1>d2-PRECISION;
+		return d1 < d2 + PRECISION && d1 > d2 - PRECISION;
 	}
-	
+
+	/**
+	 * Vérifie la supérioté stricte d'un double par rapport à un autre en
+	 * prenant en compte une imprécision
+	 * 
+	 * @param d1
+	 *            premier double
+	 * @param d2
+	 *            second double
+	 * @return true si et seulement si d1 > d2 à PRECISION près
+	 */
 	private static boolean strictlySuperior(double d1, double d2) {
-		return d1>d2+PRECISION;
+		return d1 > d2 + PRECISION;
 	}
-	
+
+	/**
+	 * Vérifie l'infériorité stricte d'un double par rapport à un autre en
+	 * prenant en compte une imprécision
+	 * 
+	 * @param d1
+	 *            premier double
+	 * @param d2
+	 *            second double
+	 * @return true si et seulement si d1 < d2 à PRECISION près
+	 */
 	private static boolean strictlyInferior(double d1, double d2) {
-		return d1<d2+PRECISION;
+		return d1 < d2 + PRECISION;
+	}
+
+	/**
+	 * Lit un fichier et le convertit en un Triangle s'il correspond à la forme
+	 * attendue (longueur d'un côté par ligne, et rien d'autre)
+	 * 
+	 * @param filename
+	 *            le fichier à lire
+	 * @return le Triangle créé à partir du fichier
+	 * @throws IOException
+	 *             si le fichier n'existe pas ou n'est pas conforme
+	 */
+	public static Triangle read(String filename) throws IOException {
+		Charset charset = Charset.forName("UTF-8");
+		Path path = FileSystems.getDefault().getPath(filename);
+		
+		if (Files.notExists(path)) {
+			throw new IOException("File " + filename + " does not exist.");
+		}
+		
+		BufferedReader reader = Files.newBufferedReader(path, charset);
+
+		String line = null;
+		ArrayList<Double> sides = new ArrayList<>();
+		while ((line = reader.readLine()) != null) {
+			try {
+				sides.add(Double.parseDouble(line));
+			} catch (NumberFormatException e) {
+				throw new IOException(line + "is not a valid double value for the sides  of the triangle.");
+			}
+		}
+		
+		if (sides.size() != 3) {
+			throw new IOException("File " + filename + " must contain 3 values but actually contains " + sides.size() +".");
+		}
+		
+		reader.close();
+		
+		return new Triangle (sides.get(0),sides.get(1),sides.get(2));
+	}
+
+	/**
+	 * Ecrit la longueur des côtés du triangle passé en argument dans un fichier (une valeur par ligne)
+	 * @param t le triangle à sauvegarder
+	 * @param filename le fichier ou sauvegarder le triangle
+	 * @throws IOException
+	 */
+	public static void write(Triangle t, String filename) throws IOException {
+		Charset charset = Charset.forName("UTF-8");
+		Path path = FileSystems.getDefault().getPath(filename);
+		
+		Files.deleteIfExists(path);
+		Files.createFile(path);
+		
+		BufferedWriter writer = Files.newBufferedWriter(path, charset);
+		
+		writer.write(String.valueOf(t.a) + "\n");
+		writer.write(String.valueOf(t.b) + "\n");
+		writer.write(String.valueOf(t.c) + "\n");
+		
+		writer.close();
 	}
 }
