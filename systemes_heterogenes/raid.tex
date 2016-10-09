@@ -1,0 +1,74 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{exptech}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[babel=true]{csquotes}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage[export]{adjustbox}
+\usepackage{titletoc}
+\usepackage{array}
+
+\hypersetup{
+  pdftitle={Systèmes hétérogènes - Technologie RAID}, % title
+  pdfnewwindow=true, % links in new window
+  colorlinks=true, % false: boxed links; true: colored links
+  linkcolor=black, % color of internal links (change box color with linkbordercolor)
+  citecolor=cyan, % color of links to bibliography
+  filecolor=cyan, % color of file links
+  urlcolor=cyan % color of external links
+}
+
+\title{
+  \textbf{Systèmes hétérogènes}\\
+  Technologies RAID
+}
+\markright{Avalon - Rapport de pré-étude}
+\author{
+\begin{minipage}{0.4\textwidth}
+	\begin{flushleft} \large
+		\emph{Auteurs :}\\
+                Amin \textsc{Nasseh}\\
+		Alexandre \textsc{Leonardi}\\
+	\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+	\begin{flushright} \large
+		\emph{Encadrant :} \\
+		Roland \textsc{Agopian}\\
+	\end{flushright}
+\end{minipage}
+}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\begin{abstract}
+\textbf{RAID :} Présentation rapide de la technologie RAID (\textbf{R}edundant \textbf{A}rray of \textbf{I}ndependant \textbf{D}isks, bin que le I ait signifié \textbf{I}nexpensive par le passé), qui permet de mettre en réseau un grand nombre de périphériques de stockage et d'en tirer divers avantages. Notamment nous allons parler des :
+\begin{itemize}
+	\item Objectifs généraux de RAID
+    \item Principales déclinaisons 
+    \item Cas d'utilisation pratiques
+\end{itemize}
+\end{abstract}
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+
+\input{raid/presentation_generale.tex}
+\pagebreak
+\input{raid/types_niveaux_raid.tex}
+\pagebreak
+\input{raid/cas_utilisation.tex}
+\pagebreak
+\input{raid/limitations.tex}
+\pagebreak
+\bibliography{raid/biblio}
+
+\end{document}
