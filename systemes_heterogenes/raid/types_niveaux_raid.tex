@@ -48,5 +48,33 @@ Ici l'objectif n'est plus la performance mais la gestion des pannes et la qualit
 Le désavantage de cette méthode est son prix : comme la même donnée est inscrite sur chaque disque, on n'utilise effectivement, pour $n$ disques, que $\frac{1}{n}$ de la mémoire totale disponible ; il faut donc investir dans de grandes quantités de mémoire pour obtenir la même capacité de stockage qu'avec du RAID 0 par exemple.
 
 \subsubsection{RAID 5 : \textit{disk array with block-interleaved distributed parity}}
+Il s'agit d'une évolution du RAID 4 qui est une évolution du RAID 3. L'idée est que, comme en RAID 0, les données vont être réparties entre les différents disques sous la forme de bandes. Cependant, un des disques, plutôt que de contenir un bloc de données, va contenir la parité des autres blocs de la bande, c'est-à-dire le XOR de l'ensemble des blocs de la bande (cf \textsc{table ~\ref{raid5}}). 
 
-\subsection{Niveaux combinés}
+\begin{table}[h]
+    \centering
+    \caption{\label{raid5} Disques en RAID 5}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \textbf{Disque 1} & \textbf{Disque 2} & \textbf{Disque 3} & \textbf{Disque 4}\\
+        \hline
+        Bloc 1 & Bloc 2 & Bloc 3 & Parité 1+2+3 \\
+        \hline
+        Bloc 4 & Partié 4+5+6 & Bloc 5 & Bloc 6 \\
+        \hline
+        Parité 7+8+9 & Bloc 7 & Bloc 8 & Bloc 9 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+On obtient, en RAID 5, des avantages du RAID 0 :
+\begin{itemize}
+	\item vitesse d'écriture améliorée car on profite  du contrôleur de chaque disque de manière équivalente 
+    \item optimisation de l'espace utilisé, pour une grappe $n$ disques, c'est $\frac{n-1}{n}$ de la mémoire qui est effectivement utilisée
+\end{itemize}
+
+On obtient également l'avantage du RAID 1 qui est une sécurité des données accrue, bien que dans une moindre mesure. En RAID 1 on pouvait se permettre de perdre $n-1$ disques tandis qu'en RAID 5 seul 1 peut tomber en panne sans conséquence : les blocs de données peuvent être recalculés grâce aux autres blocs de la bande et la parité ; les blocs de parité eux peuvent être recalculés de la même manière qu'ils ont été calculés lors de leur première écriture. 
+
+\subsection{Autres niveaux de RAID}
+Il y a de nombreux autres niveaux de RAID, moins prépondérant que les 0, 1 et 5, à commencer par les niveaux 2 à 4. RAID 2 proposait une vérification des données écrites qui a été depuis lors intégrée aux contrôleurs des disques durs ; RAID 3 et 4 ont été raffinés en RAID 5, plus complexe mais plus efficace. RAID 6 et une version améliorée (défaillance possible de $n-1$ disques sur une grappe de $n$ disques) mais plus coûteuse à mettre en \oe{}uvre. 
+
+Enfin il existe des combinaisons de niveaux de RAID, par exemple le RAID 01 par exemple répartit les données en bandes réparties sur $n$ disques (RAID 0) puis copie cette grappe de $n$ disques $k$ fois (RAID 1). Le RAID 15 est composé de $n$ sous-grappes de $k$ disques, chaque disque d'une sous-grappe contient les mêmes données (RAID 1) et les données sont réparties entre les sous-grappes selon le principe de RAID 5, $n-1$ contiennent les données et une contient la parité. 
