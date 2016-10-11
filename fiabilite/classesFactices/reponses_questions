@@ -1,0 +1,22 @@
+Simulation via l'héritage : 
+
+1) Il ne se passe rien : le projet ne compile pas, sans surprise. 
+
+2) On pourrait faire en sorte que MockConversion hérite de Conversion et redéfinisse les 2 méthodes qui nous intéressennt ; bien sûr cela ne fonctionne toujours pas sans disposer de Conversion (MockConversion ne compile pas). 
+
+Simulation avec inversion de contrôle :
+
+1) Conversion n'existe toujours pas -> ConversionBis ne peut pas compiler -> projet ne se lance pas. 
+
+2) On crée un mock MockConversionBis qui implémente IConversion, et on fait en sorte qu'ATester attende un IConversion en attribut. Dans ces conditions, les tests passent sans soucis ; il faut néanmoins que l'équipe Conversion utilise la même interface pour la classe effective Conversion.
+
+Simulation via JMockit :
+
+On obtient un mock qui fonctionne mais je n'ai pas trouvé comment lui faire implémenter une méthode complexe (i.e. faire faire au mock la vraie conversion). 
+
+JMockit implémente certains comportements par défaut : 
+-les méthodes d'un objet mocké renvoient 0
+-les méthodes peuvent être appelés 0, 1 ou plusieurs fois au cours du test
+-si le "times" est spécifié dans Expectations, vérifier le nombre d'appels dans Verifications génère une erreur 
+
+Au final j'ai testé avec et sans ces deux membres et le plus pratique était de définir les résultats attendus dans Expectations (nécessaire), de définir le nombre de fois que chaque méthode utile doit être appelée dans Expectations ("times = 1" à écrire une seule fois), et de définir que les (ici, la) méthodes inutiles ne sont jamais appelées dans Verifications. 
