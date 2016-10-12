@@ -1,9 +1,7 @@
-\section{Niveaux de RAID}
-
-\subsection{Niveaux standards}
+\section{Niveaux de RAID standards}
 Il y a 8 niveaux standards de RAID, numérotés de 0 à 7, mais les plus courants sont les 0, 1 et 5. 
 
-\subsubsection{RAID 0 : \textit{striping}}
+\subsection{RAID 0 : \textit{striping}}
 Cette technique vise à augmenter la vitesse d'écriture des données. Il s'agit de fragmenter les données à écrire entre chacun des disques de la grappe pour obtenir une vitesse d'écriture améliorée ; en effet, chaque disque ayant son propre contrôleur, les écritures peuvent se faire en parallèle. 
 
 On parle d'écriture des données par bande (\textit{strips}) qui a donné son nom au niveau. Une bande correspond au bloc d'un index donné sur chacun des disques (cf \textsc{table ~\ref{striping}}).
@@ -26,7 +24,7 @@ On parle d'écriture des données par bande (\textit{strips}) qui a donné son n
 
 On voit que cette technique n'apporte rien en terme de qualité de service, car si l'un des disques tombe en panne tout le système est inaccessible. Par ailleurs elle implique des disques de taille identique car les bandes faisant la même taille sur chaque disque, c'est le disque le plus petit qui définit le nombre maximum de bandes (et donc la quantité de données) utilisable. 
 
-\subsubsection{RAID 1 : \textit{mirroring}}
+\subsection{RAID 1 : \textit{mirroring}}
 Ici l'objectif n'est plus la performance mais la gestion des pannes et la qualité de service. On écrit les données en parallèle sur chaque disque de la grappe pour en avoir une sauvegarde (cf \textsc{table ~\ref{striping}}). Le fait que l'écriture soit simultanée fait que les disques sont interchangeables à tout moment, et le système reste opérationnel tant qu'au moins un des disques de la grappe n'est pas KO. 
 
 \begin{table}[h]
@@ -47,7 +45,7 @@ Ici l'objectif n'est plus la performance mais la gestion des pannes et la qualit
 
 Le désavantage de cette méthode est son prix : comme la même donnée est inscrite sur chaque disque, on n'utilise effectivement, pour $n$ disques, que $\frac{1}{n}$ de la mémoire totale disponible ; il faut donc investir dans de grandes quantités de mémoire pour obtenir la même capacité de stockage qu'avec du RAID 0 par exemple.
 
-\subsubsection{RAID 5 : \textit{disk array with block-interleaved distributed parity}}
+\subsection{RAID 5 : \textit{disk array with block-interleaved distributed parity}}
 Il s'agit d'une évolution du RAID 4 qui est une évolution du RAID 3. L'idée est que, comme en RAID 0, les données vont être réparties entre les différents disques sous la forme de bandes. Cependant, un des disques, plutôt que de contenir un bloc de données, va contenir la parité des autres blocs de la bande, c'est-à-dire le XOR de l'ensemble des blocs de la bande (cf \textsc{table ~\ref{raid5}}). 
 
 \begin{table}[h]
@@ -73,8 +71,3 @@ On obtient, en RAID 5, des avantages du RAID 0 :
 \end{itemize}
 
 On obtient également l'avantage du RAID 1 qui est une sécurité des données accrue, bien que dans une moindre mesure. En RAID 1 on pouvait se permettre de perdre $n-1$ disques tandis qu'en RAID 5 seul 1 peut tomber en panne sans conséquence : les blocs de données peuvent être recalculés grâce aux autres blocs de la bande et la parité ; les blocs de parité eux peuvent être recalculés de la même manière qu'ils ont été calculés lors de leur première écriture. 
-
-\subsection{Autres niveaux de RAID}
-Il y a de nombreux autres niveaux de RAID, moins prépondérant que les 0, 1 et 5, à commencer par les niveaux 2 à 4. RAID 2 proposait une vérification des données écrites qui a été depuis lors intégrée aux contrôleurs des disques durs ; RAID 3 et 4 ont été raffinés en RAID 5, plus complexe mais plus efficace. RAID 6 et une version améliorée (défaillance possible de $n-1$ disques sur une grappe de $n$ disques) mais plus coûteuse à mettre en \oe{}uvre. 
-
-Enfin il existe des combinaisons de niveaux de RAID, par exemple le RAID 01 par exemple répartit les données en bandes réparties sur $n$ disques (RAID 0) puis copie cette grappe de $n$ disques $k$ fois (RAID 1). Le RAID 15 est composé de $n$ sous-grappes de $k$ disques, chaque disque d'une sous-grappe contient les mêmes données (RAID 1) et les données sont réparties entre les sous-grappes selon le principe de RAID 5, $n-1$ contiennent les données et une contient la parité. 

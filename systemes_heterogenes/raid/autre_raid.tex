@@ -1,0 +1,10 @@
+\section{Autres niveaux de RAID}
+Il y a de nombreux autres niveaux de RAID, moins prépondérant que les 0, 1 et 5, à commencer par les niveaux 2 à 4.
+
+ RAID 2 proposait une vérification des données écrites qui a été depuis lors intégrée aux contrôleurs des disques durs ; RAID 3 et 4 ont été raffinés en RAID 5, plus complexe mais plus efficace. 
+
+RAID 6 et une version améliorée (défaillance possible de $n-1$ disques sur une grappe de $n$ disques) mais plus coûteuse à mettre en \oe{}uvre. 
+
+Enfin il existe des combinaisons de niveaux de RAID, par exemple le RAID 01 par exemple répartit les données en bandes réparties sur $n$ disques (RAID 0) puis copie cette grappe de $n$ disques $k$ fois (RAID 1). 
+
+Le RAID 15 est composé de $n$ sous-grappes de $k$ disques, chaque disque d'une sous-grappe contient les mêmes données (RAID 1) et les données sont réparties entre les sous-grappes selon le principe de RAID 5, $n-1$ contiennent les données et une contient la parité. 
