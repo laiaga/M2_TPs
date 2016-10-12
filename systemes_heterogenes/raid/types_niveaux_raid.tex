@@ -25,11 +25,11 @@ On parle d'écriture des données par bande (\textit{strips}) qui a donné son n
 On voit que cette technique n'apporte rien en terme de qualité de service, car si l'un des disques tombe en panne tout le système est inaccessible. Par ailleurs elle implique des disques de taille identique car les bandes faisant la même taille sur chaque disque, c'est le disque le plus petit qui définit le nombre maximum de bandes (et donc la quantité de données) utilisable. 
 
 \subsection{RAID 1 : \textit{mirroring}}
-Ici l'objectif n'est plus la performance mais la gestion des pannes et la qualité de service. On écrit les données en parallèle sur chaque disque de la grappe pour en avoir une sauvegarde (cf \textsc{table ~\ref{striping}}). Le fait que l'écriture soit simultanée fait que les disques sont interchangeables à tout moment, et le système reste opérationnel tant qu'au moins un des disques de la grappe n'est pas KO. 
+Ici l'objectif n'est plus la performance mais la gestion des pannes et la qualité de service. On écrit les données en parallèle sur chaque disque de la grappe pour en avoir une sauvegarde (cf \textsc{table ~\ref{mirroring}}). Le fait que l'écriture soit simultanée fait que les disques sont interchangeables à tout moment, et le système reste opérationnel tant qu'au moins un des disques de la grappe n'est pas KO. 
 
 \begin{table}[h]
     \centering
-    \caption{\label{striping} Disques en RAID 0}
+    \caption{\label{mirroring} Disques en RAID 1}
     \begin{tabular}{|l|c|r|}
         \hline
         \textbf{Disque 1} & \textbf{Disque 2} & \textbf{Disque 3} \\
@@ -57,7 +57,7 @@ Il s'agit d'une évolution du RAID 4 qui est une évolution du RAID 3. L'idée e
         \hline
         Bloc 1 & Bloc 2 & Bloc 3 & Parité 1+2+3 \\
         \hline
-        Bloc 4 & Partié 4+5+6 & Bloc 5 & Bloc 6 \\
+        Bloc 4 & Parité 4+5+6 & Bloc 5 & Bloc 6 \\
         \hline
         Parité 7+8+9 & Bloc 7 & Bloc 8 & Bloc 9 \\
         \hline

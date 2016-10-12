@@ -11,21 +11,12 @@
 \usepackage{titletoc}
 \usepackage{array}
 
-\hypersetup{
-  pdftitle={Systèmes hétérogènes - Technologie RAID}, % title
-  pdfnewwindow=true, % links in new window
-  colorlinks=true, % false: boxed links; true: colored links
-  linkcolor=black, % color of internal links (change box color with linkbordercolor)
-  citecolor=cyan, % color of links to bibliography
-  filecolor=cyan, % color of file links
-  urlcolor=cyan % color of external links
-}
 
 \title{
   \textbf{Systèmes hétérogènes}\\
   Technologies RAID
 }
-\markright{Avalon - Rapport de pré-étude}
+\markright{Systèmes hétérogènes - RAID}
 \author{
 \begin{minipage}{0.4\textwidth}
 	\begin{flushleft} \large
@@ -48,7 +39,11 @@
 \maketitle
 \thispagestyle{empty}
 \begin{abstract}
-RESUME ICI
+\textbf{RAID :} Présentation rapide de la technologie RAID (\textbf{R}edundant \textbf{A}rray of \textbf{I}ndependant \textbf{D}isks, bin que le I ait signifié \textbf{I}nexpensive par le passé), qui permet de mettre en réseau un grand nombre de périphériques de stockage et d'en tirer divers avantages. Notamment nous allons parler des :
+\begin{itemize}
+	\item Objectifs généraux de RAID
+    \item Principales déclinaisons 
+\end{itemize}
 \end{abstract}
 \pagebreak
 
@@ -56,17 +51,15 @@ RESUME ICI
 \pagebreak
 
 
-\input{root/intro.tex}
+\input{raid/presentation_generale.tex}
 \pagebreak
-\input{root/boot_pc.tex}
+\input{raid/types_niveaux_raid.tex}
 \pagebreak
-\input{root/boot_linux.tex}
+\input{raid/autre_raid.tex}
 \pagebreak
-\input{root/password.tex}
-\pagebreak
-\input{root/ccl.tex}
+\input{raid/ccl.tex}
 \pagebreak
 \nocite{*}
-\bibliography{root/biblio}
+\bibliography{raid/biblio}
 
 \end{document}
