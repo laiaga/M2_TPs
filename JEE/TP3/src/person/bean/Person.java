@@ -1,12 +1,21 @@
 package person.bean;
 
 public class Person {
+	public enum Statut{
+		ETUDIANT,ENSEIGNANT,EXTERIEUR
+	}
+	
+	private Statut statut;
 	private int id;
 	private String name;
 	private String surname;
 	private String birthdate;
 	private String email;
 	
+	
+	public Statut getStatut() {
+		return statut;
+	}
 	public int getId() {
 		return id;
 	}
@@ -21,6 +30,9 @@ public class Person {
 	}
 	public String getEmail() {
 		return email;
+	}
+	public void setStatut(Statut statut) {
+		this.statut = statut;
 	}
 	public void setId(int id) {
 		this.id = id;

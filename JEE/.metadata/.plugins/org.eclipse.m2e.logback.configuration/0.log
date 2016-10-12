@@ -1,0 +1,332 @@
+2016-10-12 09:52:38,269 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.6/maven-war-plugin-2.6.jar
+2016-10-12 09:52:38,403 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.6/maven-war-plugin-2.6.jar
+2016-10-12 09:52:43,272 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: TP3:TP3:0.0.1-SNAPSHOT @ /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/pom.xml.
+2016-10-12 09:52:43,442 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.6/maven-war-plugin-2.6.pom
+2016-10-12 09:52:43,479 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.6/maven-war-plugin-2.6.pom
+2016-10-12 09:52:43,535 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/27/maven-plugins-27.pom
+2016-10-12 09:52:43,577 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/27/maven-plugins-27.pom
+2016-10-12 09:52:43,636 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/26/maven-parent-26.pom
+2016-10-12 09:52:43,718 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/26/maven-parent-26.pom
+2016-10-12 09:52:43,800 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/apache/16/apache-16.pom
+2016-10-12 09:52:43,844 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/apache/16/apache-16.pom
+2016-10-12 09:52:44,462 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.6/maven-archiver-2.6.pom
+2016-10-12 09:52:44,506 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.6/maven-archiver-2.6.pom
+2016-10-12 09:52:44,568 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/20/maven-shared-components-20.pom
+2016-10-12 09:52:44,614 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/20/maven-shared-components-20.pom
+2016-10-12 09:52:44,703 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/24/maven-parent-24.pom
+2016-10-12 09:52:44,809 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/24/maven-parent-24.pom
+2016-10-12 09:52:44,863 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/apache/14/apache-14.pom
+2016-10-12 09:52:44,912 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/apache/14/apache-14.pom
+2016-10-12 09:52:44,978 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.pom
+2016-10-12 09:52:45,056 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.pom
+2016-10-12 09:52:45,147 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.8.1/plexus-archiver-2.8.1.pom
+2016-10-12 09:52:45,194 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.8.1/plexus-archiver-2.8.1.pom
+2016-10-12 09:52:45,267 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.3/plexus-components-1.3.pom
+2016-10-12 09:52:45,312 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.3/plexus-components-1.3.pom
+2016-10-12 09:52:45,378 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3/plexus-3.3.pom
+2016-10-12 09:52:45,439 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.3/plexus-3.3.pom
+2016-10-12 09:52:45,512 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.pom
+2016-10-12 09:52:45,567 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.pom
+2016-10-12 09:52:45,630 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.3.2/plexus-io-2.3.2.pom
+2016-10-12 09:52:45,674 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.3.2/plexus-io-2.3.2.pom
+2016-10-12 09:52:45,738 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.2/plexus-components-1.2.pom
+2016-10-12 09:52:45,792 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.2/plexus-components-1.2.pom
+2016-10-12 09:52:45,844 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom
+2016-10-12 09:52:45,896 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.2/plexus-3.2.pom
+2016-10-12 09:52:45,965 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.9/commons-compress-1.9.pom
+2016-10-12 09:52:46,020 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.9/commons-compress-1.9.pom
+2016-10-12 09:52:46,183 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.pom
+2016-10-12 09:52:46,241 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.pom
+2016-10-12 09:52:46,308 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom
+2016-10-12 09:52:46,355 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom
+2016-10-12 09:52:46,408 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.4.1/plexus-io-2.4.1.pom
+2016-10-12 09:52:46,452 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.4.1/plexus-io-2.4.1.pom
+2016-10-12 09:52:46,528 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.pom
+2016-10-12 09:52:46,587 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.pom
+2016-10-12 09:52:46,659 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/24/commons-parent-24.pom
+2016-10-12 09:52:46,739 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/24/commons-parent-24.pom
+2016-10-12 09:52:46,823 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.9/plexus-archiver-2.9.pom
+2016-10-12 09:52:46,877 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.9/plexus-archiver-2.9.pom
+2016-10-12 09:52:46,946 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.4/plexus-io-2.4.pom
+2016-10-12 09:52:46,991 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.4/plexus-io-2.4.pom
+2016-10-12 09:52:47,069 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.4/xstream-1.4.4.pom
+2016-10-12 09:52:47,161 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.4/xstream-1.4.4.pom
+2016-10-12 09:52:47,215 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream-parent/1.4.4/xstream-parent-1.4.4.pom
+2016-10-12 09:52:47,262 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream-parent/1.4.4/xstream-parent-1.4.4.pom
+2016-10-12 09:52:47,322 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/3/codehaus-parent-3.pom
+2016-10-12 09:52:47,399 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/3/codehaus-parent-3.pom
+2016-10-12 09:52:47,478 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.pom
+2016-10-12 09:52:47,538 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.pom
+2016-10-12 09:52:47,628 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.pom
+2016-10-12 09:52:47,673 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.pom
+2016-10-12 09:52:47,755 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.3/maven-filtering-1.3.pom
+2016-10-12 09:52:47,813 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.3/maven-filtering-1.3.pom
+2016-10-12 09:52:47,883 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.pom
+2016-10-12 09:52:47,931 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.6/maven-shared-utils-0.6.pom
+2016-10-12 09:52:48,009 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.18/plexus-utils-3.0.18.pom
+2016-10-12 09:52:48,054 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.18/plexus-utils-3.0.18.pom
+2016-10-12 09:52:48,127 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.pom
+2016-10-12 09:52:48,184 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.19/plexus-interpolation-1.19.pom
+2016-10-12 09:52:48,371 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-mapping/1.0/maven-mapping-1.0.pom
+2016-10-12 09:52:48,419 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-mapping/1.0/maven-mapping-1.0.pom
+2016-10-12 09:52:48,946 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.jar
+2016-10-12 09:52:49,077 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.jar
+2016-10-12 09:52:49,126 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar
+2016-10-12 09:52:49,203 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar
+2016-10-12 09:52:49,248 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar
+2016-10-12 09:52:49,301 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar
+2016-10-12 09:52:49,338 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar
+2016-10-12 09:52:49,394 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar
+2016-10-12 09:52:49,432 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar
+2016-10-12 09:52:49,491 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.jar
+2016-10-12 09:52:49,530 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.jar
+2016-10-12 09:52:49,586 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.jar
+2016-10-12 09:52:49,623 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.jar
+2016-10-12 09:52:49,688 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.jar
+2016-10-12 09:52:49,745 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar
+2016-10-12 09:52:49,793 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar
+2016-10-12 09:52:49,846 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar
+2016-10-12 09:52:49,904 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar
+2016-10-12 09:52:49,947 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.2/commons-cli-1.2.jar
+2016-10-12 09:52:50,026 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.2/commons-cli-1.2.jar
+2016-10-12 09:52:50,080 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.jar
+2016-10-12 09:52:50,139 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.jar
+2016-10-12 09:52:50,191 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.jar
+2016-10-12 09:52:50,239 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.jar
+2016-10-12 09:52:50,278 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.6/maven-archiver-2.6.jar
+2016-10-12 09:52:50,327 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/2.6/maven-archiver-2.6.jar
+2016-10-12 09:52:50,364 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.jar
+2016-10-12 09:52:50,439 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.7/maven-shared-utils-0.7.jar
+2016-10-12 09:52:50,478 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.4.1/plexus-io-2.4.1.jar
+2016-10-12 09:52:50,535 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-io/2.4.1/plexus-io-2.4.1.jar
+2016-10-12 09:52:50,575 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.jar
+2016-10-12 09:52:50,683 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/commons-io/commons-io/2.2/commons-io-2.2.jar
+2016-10-12 09:52:50,723 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.9/plexus-archiver-2.9.jar
+2016-10-12 09:52:50,795 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/2.9/plexus-archiver-2.9.jar
+2016-10-12 09:52:50,840 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.9/commons-compress-1.9.jar
+2016-10-12 09:52:50,968 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-compress/1.9/commons-compress-1.9.jar
+2016-10-12 09:52:51,007 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar
+2016-10-12 09:52:51,073 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar
+2016-10-12 09:52:51,113 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.4/xstream-1.4.4.jar
+2016-10-12 09:52:51,264 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.4/xstream-1.4.4.jar
+2016-10-12 09:52:51,301 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar
+2016-10-12 09:52:51,362 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar
+2016-10-12 09:52:51,398 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar
+2016-10-12 09:52:51,450 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar
+2016-10-12 09:52:51,488 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.jar
+2016-10-12 09:52:51,587 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.20/plexus-utils-3.0.20.jar
+2016-10-12 09:52:51,626 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.3/maven-filtering-1.3.jar
+2016-10-12 09:52:51,676 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/1.3/maven-filtering-1.3.jar
+2016-10-12 09:52:51,714 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-mapping/1.0/maven-mapping-1.0.jar
+2016-10-12 09:52:51,761 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-mapping/1.0/maven-mapping-1.0.jar
+2016-10-12 09:52:57,324 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:52:57,363 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 09:52:57,366 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:52:57,368 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 09:52:57,443 [Worker-16] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /TP3/src
+2016-10-12 09:52:57,444 [Worker-16] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /TP3/src/test/java because it overlaps with /TP3/src
+2016-10-12 09:52:58,322 [Worker-16] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-10-12 09:52:59,389 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: TP3:TP3:0.0.1-SNAPSHOT @ /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/pom.xml.
+2016-10-12 09:53:00,701 [Worker-16] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /TP3/src
+2016-10-12 09:53:00,702 [Worker-16] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /TP3/src/test/java because it overlaps with /TP3/src
+2016-10-12 09:53:01,027 [Worker-16] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for TP3
+2016-10-12 09:53:01,077 [Worker-16] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2016-10-12 09:53:37,785 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:53:37,794 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 09:53:37,797 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:53:37,800 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 09:53:37,800 [Worker-18] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of TP3
+2016-10-12 09:53:37,801 [Worker-18] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for TP3
+2016-10-12 09:53:37,826 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+2016-10-12 09:53:37,851 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:57:27,197 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: TP3:TP3:0.0.1-SNAPSHOT @ /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/pom.xml.
+2016-10-12 09:57:27,490 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/taglibs/taglibs-standard-spec/1.2.5/taglibs-standard-spec-1.2.5.pom
+2016-10-12 09:57:27,534 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/taglibs/taglibs-standard-spec/1.2.5/taglibs-standard-spec-1.2.5.pom
+2016-10-12 09:57:27,587 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/taglibs/taglibs-standard/1.2.5/taglibs-standard-1.2.5.pom
+2016-10-12 09:57:27,644 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/taglibs/taglibs-standard/1.2.5/taglibs-standard-1.2.5.pom
+2016-10-12 09:57:27,721 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/taglibs/taglibs-parent/3/taglibs-parent-3.pom
+2016-10-12 09:57:27,768 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/taglibs/taglibs-parent/3/taglibs-parent-3.pom
+2016-10-12 09:57:27,828 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/taglibs/taglibs-standard-spec/1.2.5/taglibs-standard-spec-1.2.5.jar
+2016-10-12 09:57:27,924 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/taglibs/taglibs-standard-spec/1.2.5/taglibs-standard-spec-1.2.5.jar
+2016-10-12 09:57:29,132 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:57:29,134 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 09:57:29,137 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:57:29,140 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 09:57:29,141 [Worker-18] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of TP3
+2016-10-12 09:57:29,141 [Worker-18] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for TP3
+2016-10-12 09:57:29,145 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:57:30,277 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:57:30,279 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 09:57:30,280 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:57:30,283 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 09:57:38,329 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: TP3:TP3:0.0.1-SNAPSHOT @ /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/pom.xml.
+2016-10-12 09:57:38,555 [Worker-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/taglibs/taglibs-standard-impl/1.2.5/taglibs-standard-impl-1.2.5.pom
+2016-10-12 09:57:38,604 [Worker-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/taglibs/taglibs-standard-impl/1.2.5/taglibs-standard-impl-1.2.5.pom
+2016-10-12 09:57:38,665 [Worker-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/taglibs/taglibs-standard-impl/1.2.5/taglibs-standard-impl-1.2.5.jar
+2016-10-12 09:57:38,848 [Worker-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/taglibs/taglibs-standard-impl/1.2.5/taglibs-standard-impl-1.2.5.jar
+2016-10-12 09:57:40,294 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:57:40,298 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 09:57:40,302 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:57:40,306 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 09:57:40,308 [Worker-2] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of TP3
+2016-10-12 09:57:40,308 [Worker-2] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for TP3
+2016-10-12 09:57:40,312 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:57:41,457 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:57:41,460 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 09:57:41,461 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:57:41,480 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 09:58:24,704 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: TP3:TP3:0.0.1-SNAPSHOT @ /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/pom.xml.
+2016-10-12 09:58:25,980 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:58:25,985 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 09:58:25,987 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:58:25,989 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 09:58:25,990 [Worker-21] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of TP3
+2016-10-12 09:58:25,990 [Worker-21] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for TP3
+2016-10-12 09:58:25,995 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:58:27,486 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:58:27,488 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 09:58:27,490 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 09:58:27,491 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:00:25,389 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:00:25,392 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:00:25,394 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:00:25,396 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:00:49,978 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:00:49,983 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:00:49,988 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:00:49,997 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:05:34,248 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:05:34,251 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:05:34,252 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:05:34,256 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:08:55,955 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:08:55,965 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:08:55,970 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:08:55,977 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:09:27,078 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:09:27,082 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:09:27,083 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:09:27,086 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:12:05,505 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:12:05,516 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:12:05,522 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:12:05,526 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:13:16,464 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:13:16,467 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:13:16,469 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:13:16,472 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:14:01,077 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:14:01,081 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:14:01,084 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:14:01,087 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:14:08,482 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:14:08,493 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:14:08,494 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:14:08,499 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:15:20,964 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:15:20,976 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:15:20,978 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:15:20,982 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:15:29,756 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:15:29,759 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:15:29,761 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:15:29,766 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:20:10,016 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:20:10,026 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:20:10,029 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:20:10,032 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:21:03,702 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:21:03,706 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:21:03,707 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:21:03,711 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:21:58,500 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:21:58,504 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:21:58,507 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:21:58,511 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:23:01,558 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:23:01,560 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:23:01,562 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:23:01,565 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:25:00,067 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:25:00,070 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:25:00,072 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:25:00,076 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:26:10,403 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:26:10,407 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:26:10,414 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:26:10,417 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:28:39,770 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:28:39,775 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:28:39,777 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:28:39,780 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:36:18,407 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:36:18,412 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:36:18,413 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:36:18,416 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:36:18,418 [Worker-2] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of TP3
+2016-10-12 10:36:18,419 [Worker-2] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for TP3
+2016-10-12 10:36:18,426 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:38:24,810 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:38:24,823 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:38:24,824 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:38:24,829 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:38:50,999 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:38:51,010 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:38:51,012 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:38:51,015 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:39:04,332 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:39:04,342 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:39:04,343 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:39:04,346 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:39:16,323 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:39:16,334 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:39:16,337 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:39:16,339 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:39:31,628 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:39:31,632 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:39:31,633 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:39:31,636 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:43:25,352 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:43:25,358 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:43:25,360 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:43:25,362 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:44:09,699 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:44:09,702 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:44:09,703 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:44:09,705 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:46:32,885 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:46:32,888 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:46:32,890 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:46:32,892 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:46:53,700 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:46:53,704 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:46:53,705 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:46:53,707 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:47:23,227 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:47:23,231 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:47:23,233 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:47:23,237 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:58:29,496 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:58:29,501 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:58:29,501 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:58:29,503 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:58:39,176 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:58:39,180 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:58:39,185 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:58:39,187 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 10:59:18,011 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:59:18,015 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 10:59:18,015 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 10:59:18,017 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 11:24:02,391 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 11:24:02,411 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 11:24:02,413 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 11:24:02,416 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 11:26:35,502 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 11:26:35,509 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 11:26:35,510 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 11:26:35,512 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources
+2016-10-12 11:27:53,908 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 11:27:53,911 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/main/resources
+2016-10-12 11:27:53,914 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-12 11:27:53,918 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/TP3/src/test/resources

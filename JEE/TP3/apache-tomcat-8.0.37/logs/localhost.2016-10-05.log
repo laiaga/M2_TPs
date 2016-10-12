@@ -1,4 +1,0 @@
-05-Oct-2016 14:08:32.892 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
-05-Oct-2016 14:08:32.892 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
-05-Oct-2016 14:13:13.480 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
-05-Oct-2016 14:13:13.480 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()

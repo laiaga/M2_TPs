@@ -3,8 +3,6 @@ package person.business;
 import java.util.Collection;
 import java.util.Map;
 
-import javax.mail.internet.AddressException;
-import javax.mail.internet.InternetAddress;
 
 import person.bean.Person;
 
@@ -35,12 +33,12 @@ public class PersonManager {
 	
 	private static boolean isValidEmailAddress(String email) {
 		   boolean result = true;
-		   try {
-		      InternetAddress emailAddr = new InternetAddress(email);
-		      emailAddr.validate();
-		   } catch (AddressException ex) {
-		      result = false;
-		   }
+//		   try {
+//		      InternetAddress emailAddr = new InternetAddress(email);
+//		      emailAddr.validate();
+//		   } catch (AddressException ex) {
+//		      result = false;
+//		   }
 		   return result;
 		}
 }
