@@ -1,1 +1,26 @@
 \section{Mécanisme de démarrage d'un système Linux}
+Le démarrage d'un système Linux démarre à proprement parler quand le bootloader rend la main, après que toute la partie matérielle du PC ait été testée. À ce stade, deux éléments sont nécessaires au bon déroulement des opérations : une image du noyau Linux, encore appelé \verb|kernel|, et une image \verb|initramfs| (ou bien \verb|initrd| dans de plus anciennes versions du kernel) qui permettra de simuler un système de fichiers temporaire dans la RAM. 
+
+Ces deux images ont été récupérées sur le disque et chargées en mémoire par le bootloader.
+
+\subsection{Kernel}
+La première tâche du kernel est une première phase de configuration matérielle écrite en assembleur qui permet à l'image de déclencher sa propre décompression. 
+
+Le kernel va ensuite configurer le matériel de l'ordinateur pour le rendre utilisable : configuration de la mémoire, du CPU, des différents systèmes d'Entrée/Sortie, ... Il va également décompresser et monter l'image de \verb|initramfs| mentionnée plus tôt. Cela va servir à émuler le système de fichier root pour permettre au kernel de terminer son initialisation sans avoir à effectivement monter un disque physique. 
+
+\verb|initramfs| fournit notamment au kernel les drivers nécessaires à l'utilisation des différents périphériques connectés à l'ordinateur et évite la situation où l'on aurait besoin d'un driver pour aller chercher un driver sur un disque physique.
+
+À ce stade, le kernel est démarré et opérationnel mais encore aucune opération ne peut être effectuée. Le système de fichier apporté par \verb|initramfs| est démonté et le véritable système de fichier root est monté à sa place. Puis le programme \verb|init| est appelé. 
+
+\subsection{Init}
+\verb|init| est le nom le plus couramment donné au premier programme appelé par le kernel après son initialisation mais cela n'est pas obligatoire. Il va terminer le démarrage du système Linux en le rendant utilisable par un usager. Son nom complet est \verb|/sbin/init|. Comme ce fichier n'est pas standard, le chapitre qui suit est susceptible de ne pas être exact pour toute distribution de Linux ; il a été rédigé grâce à la documentation de RedHat.
+
+Une fois le programme \verb|init| lancé, il devient le processus parent de tous les autres processus automatiques déclenchés à l'initialisation du système. Il commence par appeler le script \verb|/etc/rc.d/rc.sysinit| qui initialise le PATH, la partition de swap, ainsi que d'autres étapes qui peuvent être spécifiques au système entrain de démarrer (initialisation de l'horloge par exemple \textit{via} \verb|/etc/sysconfig/clock|).
+
+\verb|init| appelle ensuite \verb|/etc/inittab| qui est un script qui décrit la configuration que doit adopter le système en fonction du runlevel choisi. Les runlevels représentent des états du système associés à un entier, certains standard (0 correspond à l'arrêt du système) et d'autres non (2 n'a  pas de signification par défaut). Le runlevel 5 correspond à un système multi-utilisateurs avec interface graphique.
+
+C'est ensuite \verb|/etc/rc.d/init.d/functions| qui est lu et utilisé par \verb|init| pour configurer la manière de démarrer, tuer, et déterminer le PID d'un programme. 
+
+Enfin, l'ensemble des processus tournant en tâche de fond en fonction du runlevel choisi, qui ont éventuellement été configurés par l'utilisateur, sont lancés. Le dossier \verb|/etc/rc.d/rcX.d/|, où X est l'entier correspondant au runlevel, contient des liens symboliques vers l'ensemble de ces processus. 
+
+À ce stade, tous les processus pour qu'un utilisateur puisse se servir du système ont été lancés.
