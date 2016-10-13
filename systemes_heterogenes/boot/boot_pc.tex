@@ -1,0 +1,49 @@
+\section{Bootstrap : Mécanisme de démarrage d'un PC}
+Bootstrap, qui se traduit littéralement par lanière de botte, est une expression des \textit{Aventures du baron de Münchhausen} où le baron s'échappe de sables mouvants en tirant sur les lanières de ses propres bottes jusqu'à s'en extraire. Accessoirement c'est aussi le nom du processus de démarrage d'un ordinateur. 
+
+\subsection{Impulsion initiale}
+Sur un appui du bouton de démarrage, un circuit électrique est fermé et une impulsion est envoyée de la carte mère à la PSU (Power Supply Unit, l'alimentation). La PSU va réaliser un test de bon fonctionnement et, si le résultat est positif, répondre par un signal électrique sur le connecteur alimentant le CPU (Central Processing Unit, le processeur). 
+
+Pendant cette première phrase, deux actions importantes sont effectuées consécutivement :
+\begin{enumerate}
+	\item les registres du CPU sont remis à une valeur par défaut stockée dans un vecteur de reset. Il s'agit d'un pointeur, stocké dans de la mémoire non-volatile, par exemple une mémoire flash de type NVRAM (Non-Volatile Random-Access Memory) ou bien une mémoire de type EEPROM (Electrically Erasable Programmable Read-Only Memory). Cette adresse est dépendante du modèle de CPU. 
+    \item le CPU exécute l'instruction maintenant pointée par ses registres. Cette instruction est la première instruction du BIOS, qui est un firmware (un logiciel de bas-niveau permettant le contrôle direct du matériel, stocké dans de la mémoire non-volatile) qui va prendre en charge la suite de l'initialisation de l'ordinateur. 
+\end{enumerate}
+
+\subsection{BIOS : Basic Input/Output System}
+Le BIOS lui-même va effectuer un certain nombre de tâches avant de laisser la place à un système d'exploitation. Le BIOS dispose de sa propre mémoire non-volatile appelée CMOS (Complimentary Metal Oxide Semiconductor). 
+
+La première tâche du BIOS est d'initialiser le contrôleur du FSB (Front Side Bus, le bus système). Le FSB est  le bus qui gère les échanges CPU/RAM (Random Access Memory, la mémoire vive) et pour l'initialiser, le BIOS récupère sa fréquence dans la CMOS qui correspond au nombre de bits de données échangeables par seconde au travers du FSB.
+
+L'étape suivante consiste à récupérer le coefficient multiplicateur du CPU qui, appliqué à la fréquence de fonctionnement du FSB, donne la fréquence de fonctionnement du CPU. Cette fréquence permet d’initialiser le contrôleur du CPU. À ce stade, le BIOS est prêt à réaliser le POST. 
+
+\subsubsection{POST : Power-On Self Test}
+Le POST est une procédure qui correspond à un certain nombre de vérifications matérielles faites par le BIOS :
+\begin{itemize}
+    \item Intégrité du BIOS lui-même (checksum du CMOS et du BIOS, état des batteries)
+	\item Bon fonctionnement de la RAM et du CPU
+    \item Bon fonctionnement des disques durs
+    \item Initialisation d'un clavier et d'une souris (si applicable)
+    \item Présence de BIOS spécifiques à certains composants tels qu'une carte vidéo (le cas échéant, ils sont eux-mêmes exécutés)
+\end{itemize}
+
+Lorsqu'une erreur survient durant le POST, elle est signalée soit par un affichage à l'écran quand c'est possible, soit à défaut par un signal sonore, c'est-à-dire une suite de bips répondant à un code. Ce code n'est pas standard et dépend du constructeur du BIOS (typiquement Award, AMI ou Ph\oe{}nix).
+
+Le code "un bip" correspond néanmoins de manière standard à passage du POST avec succès. Dans ce cas le BIOS va tenter de trouver une partition bootable. Pour ce  faire il va passer en revue l'ensemble des systèmes de stockage auxquels il a accès (CD-ROMs, disques durs, clés USB, disquettes (sait-on jamais...)) dans un ordre prédéterminé et stocké dans le CMOS. 
+
+\subsubsection{MBR : Master Boot Record}
+Un disque (ou une clé USB, etc) est bootable si le premier secteur de mémoire contient un MBR. Un MBR est un secteur contenant le code du bootloader sur 448o et la table des partitions du disque sur 64o (la taille du secteur d'un disque est de 512o de manière standard). Le bootloader est un programme dont l'objectif est de trouver et charger en mémoire le noyau du système d'exploitation pour que celui-ci puisse ensuite prendre la main. 
+
+Le BIOS va donc déclencher l'exécution du bootloader qui a plusieurs tâches à accomplir : 
+\begin{enumerate}
+	\item Trouver, à l'aide de la table des partitions, la partition active (celle qui contient l'OS)
+    \item Trouver le secteur de début de la partition active (le secteur de démarrage)
+    \item Charger l'information contenue dans le secteur de démarrage en mémoire
+    \item Transférer le contrôle du code à exécuter au secteur de démarrage
+\end{enumerate}
+
+Il est à noter qu'il n'y a pas de MBR sur une disquette : le secteur de démarrage est nécessairement le premier secteur de la disquette. 
+
+Par ailleurs, la taille du bootloader étant limité à 448o par la taille d'un secteur de disque, il existe des bootloaders chaînés (tels que GRUB, GRand Unified Bootloader, utilisé fréquemment par des distributions Linux) pour le cas où cet espace serait insuffisant. Le premier secteur du bootloader contient alors les informations nécessaires pour accéder aux secteurs suivants (à l'image d'une liste chaînée en C). 
+
+À partir de ce stade, le BIOS rend la main au noyau du système d'exploitation. 
