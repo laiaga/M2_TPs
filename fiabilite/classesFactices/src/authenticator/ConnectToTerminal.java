@@ -17,6 +17,10 @@ public class ConnectToTerminal {
 		connectedCard = null;
 		secretCodeAttempts = 0;
 	}
+	
+	public int getSecretCodeAttempts () {
+		return this.secretCodeAttempts;
+	}
 
 	/**
 	 * On regarde si le numéro de carte est valide. Si tel n'est pas le cas on renvoie une exception.
@@ -30,7 +34,7 @@ public class ConnectToTerminal {
 	public boolean validateCardNumber(int cardNumber) throws IllegalCardException {
 		ICard card = validator.validateCard(cardNumber);
 		if (card == null) {
-			throw new IllegalCardException("THe given card number (" + cardNumber 
+			throw new IllegalCardException("The given card number (" + cardNumber 
 					+ ") is not linked to a known card.");
 		} else {
 			if (connectedCard == null || !connectedCard.equals(card)) {
