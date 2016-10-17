@@ -1,0 +1,11 @@
+package model;
+
+public interface IISoCalendar {
+
+	int getDay();
+	int getWeek();
+	int getYear();
+	void setDay(int day);
+	void setWeek(int week);
+	void setYear(int year);
+}

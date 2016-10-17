@@ -1,0 +1,13 @@
+package model;
+
+public interface IDate {
+	
+	/**
+	 * 
+	 * @param year
+	 * @param month
+	 * @param day
+	 * @return
+	 */
+	IDate replace(DatePart datePart);
+}

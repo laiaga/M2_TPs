@@ -1,0 +1,34 @@
+package model;
+
+public interface IDate {
+	
+	/**
+	 * Returns a date with the same value, excpect for the part specified as argument
+	 * that gets the value specified as argument
+	 * @param datePart the part of the date to replace
+	 * @param value the value by which to replace said part
+	 * @return the new, modified, date
+	 */
+	IDate replace(DatePart datePart, int value);
+	
+	/**
+	 * @return the proleptic Gregorian ordinal of the date, 
+	 * where January 1 of year 1 has ordinal 1
+	 */
+	IDate toOrdinal();
+	
+	/**
+	 * @return the day of the week as an integer, where Monday is 0 and Sunday is 6
+	 */
+	int weekDay();
+	
+	/**
+	 * @return the day of the week as an integer, where Monday is 1 and Sunday is 7
+	 */
+	int isoWeekDay();
+	
+	/**
+	 * @return a conversion of the date as an IIsoCalendar
+	 */
+	IISoCalendar isoCalendar();
+}

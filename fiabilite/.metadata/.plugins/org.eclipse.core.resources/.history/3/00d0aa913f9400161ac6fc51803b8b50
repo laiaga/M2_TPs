@@ -1,0 +1,61 @@
+package implem;
+
+import model.DatePart;
+import model.IDate;
+import model.IISoCalendar;
+
+public class Date implements IDate {
+	private static int MINYEAR;
+	private static int MAXYEAR;
+	
+	/**
+	 * @return the current local date.
+	 */
+	public static IDate today(){
+		//TODO
+		return null;
+	}
+
+	@Override
+	public IDate replace(DatePart datePart, int value) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public IDate toOrdinal() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int weekDay() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int isoWeekDay() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public IISoCalendar isoCalendar() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String isoFormat() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String ctime() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
