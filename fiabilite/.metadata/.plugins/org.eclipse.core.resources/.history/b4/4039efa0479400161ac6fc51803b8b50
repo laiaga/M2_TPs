@@ -1,0 +1,63 @@
+package implem.test;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+import model.DatePart;
+import model.IDate;
+import model.IISoCalendar;
+
+public class DateTest {
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void replaceTest() {
+		
+	}
+	
+	@Test
+	public void toOrdinalTest() {
+		
+	}
+	
+	@Test
+	public void weekDayTest() {
+		
+	}
+	
+	@Test
+	public void isoWeekDayTest() {
+		
+	}
+	
+	@Test
+	public void isoCalendarTest() {
+		
+	}
+	
+	@Test
+	public void isoFormatTest() {
+		
+	}
+	
+	@Test
+	public void toStringTest() {
+		
+	}
+	
+	@Test
+	public void ctimeTest() {
+		
+	}
+
+}

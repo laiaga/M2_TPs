@@ -1,0 +1,10 @@
+Classes d'équivalences :
+
+replace:
+date valide au départ
+un changement de jour valide
+un changement de mois valide
+un changement d'année valide
+un changement de jour invalide
+un changement de mois invalide 
+un changement d'année invalide (année == MAXYEAR+1 par ex.)
