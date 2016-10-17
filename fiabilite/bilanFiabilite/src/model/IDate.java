@@ -8,7 +8,7 @@ package model;
 public interface IDate {
 	
 	/**
-	 * Returns a date with the same value, excpect for the part specified as argument
+	 * Returns a date with the same value, except for the part specified as argument
 	 * that gets the value specified as argument
 	 * @param datePart the part of the date to replace
 	 * @param value the value by which to replace said part
