@@ -1,0 +1,15 @@
+package springapp.business;
+
+import java.util.Collection;
+
+@Repository
+@Qualifier("birthdayRepository")
+public interface IMessageManager {
+
+    void add(String message);
+
+    int removeAll();
+
+    Collection<Message> findAll();
+
+}

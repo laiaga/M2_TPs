@@ -124,7 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="/filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/filer/etudiants/g5/l21003949/Documents/git/M2_TPs/JEE/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/RemakeEditionPersonne" path="/RemakeEditionPersonne" reloadable="true" source="org.eclipse.jst.jee.server:RemakeEditionPersonne"/></Host>
+      <Context docBase="/amuhome/l21003949/Documents/git/M2_TPs/JEE/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ROOT" path="" reloadable="false"/><Context docBase="/amuhome/l21003949/Documents/git/M2_TPs/JEE/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/RemakeEditionPersonne" path="/RemakeEditionPersonne" reloadable="true" source="org.eclipse.jst.jee.server:RemakeEditionPersonne"/><Context docBase="/amuhome/l21003949/Documents/git/M2_TPs/JEE/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/TP4" path="/TP4" reloadable="true" source="org.eclipse.jst.jee.server:TP4"/></Host>
     </Engine>
   </Service>
 </Server>

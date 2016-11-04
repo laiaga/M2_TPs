@@ -1,0 +1,4 @@
+product.name = Name is required!
+product.description = Description is required!
+product.type = Type is required!
+product.price.too.low = Price is too low!

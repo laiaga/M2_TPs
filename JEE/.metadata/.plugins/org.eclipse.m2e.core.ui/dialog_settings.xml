@@ -49,12 +49,14 @@
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="TP4"/>
 			<item value="RemakeEditionPersonne"/>
 			<item value="TP3"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="TP4"/>
 			<item value="RemakeEditionPersonne"/>
 			<item value="TP3"/>
 		</list>

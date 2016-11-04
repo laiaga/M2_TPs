@@ -1,0 +1,5 @@
+package springapp.model;
+
+public class Product {
+
+}

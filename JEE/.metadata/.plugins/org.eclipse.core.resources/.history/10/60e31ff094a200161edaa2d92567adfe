@@ -1,0 +1,42 @@
+package springapp.web;
+
+import javax.servlet.http.Part;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller()
+@RequestMapping("/tests")
+public class CountController {
+	
+	private int cpt = 0;
+	
+    protected final Log logger = LogFactory.getLog(getClass());
+
+    @RequestMapping(value = "/welcome", method = RequestMethod.GET, params = {"increment"})
+    public @ResponseBody ModelAndView sayHello(
+    		@RequestParam(value = "increment") int increment
+    		) {
+        logger.info("Running " + this + "with a user-given increment");
+        
+        cpt += increment;
+        
+        return new ModelAndView("hello", "now", cpt);
+    }
+    
+    @RequestMapping(value = "/welcome", method = RequestMethod.GET)
+    public ModelAndView sayHello() {
+        logger.info("Running " + this);
+        
+        cpt ++;
+        
+        return new ModelAndView("hello", "now", cpt);
+    }
+
+}

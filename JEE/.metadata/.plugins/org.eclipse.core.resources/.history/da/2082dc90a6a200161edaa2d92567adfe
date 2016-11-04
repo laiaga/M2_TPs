@@ -1,0 +1,18 @@
+package springapp.business;
+
+import java.util.Collection;
+
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Repository;
+
+@Repository
+@Qualifier("birthdayRepository")
+public interface IMessageManager {
+
+    void add(String message);
+
+    int removeAll();
+
+    Collection<Message> findAll();
+
+}

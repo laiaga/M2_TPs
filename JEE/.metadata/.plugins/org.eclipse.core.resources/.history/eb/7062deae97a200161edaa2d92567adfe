@@ -1,0 +1,5 @@
+package springapp.business;
+
+public class ProductManager {
+
+}
