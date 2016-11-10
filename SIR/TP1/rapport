@@ -1,0 +1,59 @@
+I-ENCODAGE
+Encoder vos prénom et nom de famille en :
+-base64 -> 
+	echo -n "alexandre leonardi" | openssl enc -a
+	YWxleGFuZHJlIGxlb25hcmRp
+-hexa ->
+	echo -n "alexandre leonardi" | openssl dgst -hex
+	(stdin)= 7ddcb2442e0bc5c7e31a9eb7cb8d3e9e
+-binaire ->
+	echo -n "alexandre leonardi" | openssl dgst -binary | xxd -b
+	0000000: 01111101 11011100 10110010 01000100 00101110 00001011  }..D..
+	0000006: 11000101 11000111 11100011 00011010 10011110 10110111  ......
+	000000c: 11001011 10001101 00111110 10011110                    ..>.
+
+Sécurité de ces primitives ?
+Nulle, il s'agit d'une simple substiution et avec une conversion simple et connue en plus.
+Applications ?
+Pas liées à la sécurité mais plutôt aux contraintes, par exemple binaire pour stocker directement l'info sur un HDD.
+
+II-HACHAGE
+-MD5 ->
+	echo -n "alexandre leonardi" | openssl dgst -md5
+	(stdin)= 7ddcb2442e0bc5c7e31a9eb7cb8d3e9e
+-SHA-1 ->
+	echo -n "alexandre leonardi" | openssl dgst -sha1
+	(stdin)= 307dfc9c13b59e4548073c0583430521b056fe76
+-SHA-256 ->
+	echo -n "alexandre leonardi" | openssl dgst -sha256
+	(stdin)= 625db9514bc91ef457ef34437344096fe587cd10fe4f206f29bcf04559677c54
+-RIPE-MD160 ->
+	echo -n "alexandre leonardi" | openssl dgst -ripemd160
+	(stdin)= 2285075ab46f0dc44bf9778fcbc7be48c040da25
+
+Sécurité ?
+Sécurié variable (MD5 brisé par exemple) mais pour SHA-256 et RIPE : forte.
+Applications ?
+Sert plutôt à signer un document qu'à l'encrypter.
+
+III-CHIFFREMENT SYMÉTRIQUE
+-AES 192 bits CBC par clé/vecteur ->
+	$ echo -n "alexandre leonardi" | openssl enc -e -aes-192-cbc -K baba -iv ebaba -a
+		qCwAG/HxtSD8YyqONzzMU/9u8lIxF615a7Pq78pP/Yk=
+	$ echo -n "alexandre leonardi" | openssl enc -e -aes-192-cbc -K baba -iv ebaba | openssl dgst -hex
+		(stdin)= f2006274d546cfa4a4f10285ac5816f9
+	$ echo -n "alexandre leonardi secret" | openssl enc -e -aes-192-cbc -K baba -iv ebaba | openssl enc -d -aes-192-cbc -K baba -iv ebaba
+		alexandre leonardi secret
+-AES 256 en mode ECB par phrase de passe ->
+	Le pwd utilisé est "TP Primitives Crypto"
+	$ echo -n "alexandre leonardi" | openssl enc -e -aes-256-ecb -out "aes256"
+		enter aes-256-ecb encryption password:
+		Verifying - enter aes-256-ecb encryption password:
+	$ openssl enc -d -aes-256-ecb -in "aes256"
+		enter aes-256-ecb decryption password:
+		alexandre leonardi
+-IDEA avec phrase de passe ->
+	Pas dispo dans la version utilisée
+-IDEA en mode CFB par clé/vecteur
+	Pas dispo dans la version utilisée
+

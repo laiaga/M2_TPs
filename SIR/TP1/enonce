@@ -1,0 +1,68 @@
+Le but de ce TP est de manipuler les primitives cryptographiques classiques au travers des outils d'OpenSSL (sauf la question 1)
+
+Il vous est demandé un compte-rendu pour ce TP.
+
+Aide-Mémoire
+
+Système : VM Linux avec openssl
+Documentation:
+man openssl et man commande
+en VF Attention: la traduction correspond à une version ancienne et ne présente donc pas toutes les fonctionnalités actuelles (AES par exemple).
+Howto sur la ligne de commande.
+HowTo sur les certificats SSL.
+Indications pour utiliser openssl:
+openssl ne contient pas d'aide complète en ligne de commande, cependant ajouter -h permet de faire afficher les commandes ainsi que la liste des options disponibles.
+La syntaxe est en général
+  openssl commande -option -in fichierentree -out fichiersortie
+Chaque commande possède une page de man détaillée. Exemple:
+  man rsa
+Il est possible de faire travailler sur l'entrée standard (noter le -n pour ne pas avoir de \n rajouté)
+  echo -n "message à encoder" | openssl enc -base64
+Rappel: ""hexdump -C fichier.bin" permet d'afficher un fichier binaire
+Algorithmes de base
+
+Encodage
+
+Encoder vos prénom et nom de famille en
+
+hexadécimal
+binaire
+base64
+Quelle est la sécurité de ces primitives? Proposer des applications de ces différents encodages.
+
+Hachage
+
+Hacher vos prénom et nom de famille en
+
+MD5
+SHA-1
+SHA-256
+RIPE-MD160
+Quelle est la sécurité de ces primitives? Proposer des applications de ces différentes fonctions de hachage.
+
+Chiffrement Symétrique
+
+Chiffrer vos prénom et nom de famille, accompagnés d'un texte "secret", avec chacun des algorithmes ci-dessous. On affichera les résultat en héxadécimale ainsi qu'encodé en base64. On prendra, selon les cas, les paramètres suivants :
+
+Clef:baba,
+Vecteur d'Initialisation: ebaba
+Phrase de passe: TP Primitives Crypto
+Les algorithmes:
+
+IDEA avec phrase de passe
+IDEA en mode CFB par clé/vecteur
+AES 192 bits CBC par clé/vecteur
+AES 256 en mode ECB par phrase de passe.
+Pour chacun des cas, effectuer le déchiffrage.
+
+Chiffrement Assymétrique
+
+voir la suite
+
+Modalités
+
+Envoyez-moi votre compte-rendu par courrier électronique sous forme d'archive (.zip ou .tgz uniquement) contenant:
+
+CR1-login.pdf : votre compte-rendu de ce premier TP au format pdf
+pub-login.pem : votre clef publique
+Votre courriel aura comme sujet [SIR] TP1.
