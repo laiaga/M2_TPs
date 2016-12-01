@@ -1,0 +1,19 @@
+	Certificats CNRS et le Certificat de Votre Enseignant :
+
+Le certificat godard.pem est authentique si l'on fait confiance à CNRS2.pem, car ce dernier authentifie un certificat intermédiaire qui athentifie lui-même le certificat godard.pem.
+On peut notamment vérifier que les certificats CNRS2, CNRS2-Standard et godard sont conformes à ceux que l'on peut trouver sur le site du CNS :
+https://igc.services.cnrs.fr/search_user_certificate/?CA=CNRS2-Standard&lang=fr&body=search_user.html
+
+	Vos Certificats :
+
+La clé utilisée pour signer nos clés est authentique : on peut le voir grâce à la chaîne suivate
+CNRS2 -> CNRS2-Standard -> godard -> godard-tp.ca -> godard-tp 
+(la chaîne est stockée dans chaine2)
+
+Le cetificat racine du CNRS est réservé à un petit nombre d'autres certificats CNRS pour des raisons d'organisation.
+
+Mon certificat peut être vérifier grâce à chaîne3 :
+CNRS2 -> CNRS2-Standard -> godard -> godard-tp.ca -> godard-tp -> leonardi.tp.pem
+
+	Utilisation des Sockets SSL :
+

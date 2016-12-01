@@ -1,0 +1,74 @@
+godard.ca
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                AD:CE:85:51:8C:61:B8:FD:F7:FE:67:91:C4:81:67:34:51:9D:D5:D3
+            X509v3 Authority Key Identifier: 
+                keyid:AD:CE:85:51:8C:61:B8:FD:F7:FE:67:91:C4:81:67:34:51:9D:D5:D3
+
+            X509v3 Basic Constraints: 
+                CA:TRUE
+
+
+godard-tp.ca
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                27:E2:DA:F0:D7:66:48:27:9B:65:B0:7C:24:26:78:B7:04:DA:7D:8A
+            X509v3 Authority Key Identifier: 
+                keyid:AD:CE:85:51:8C:61:B8:FD:F7:FE:67:91:C4:81:67:34:51:9D:D5:D3
+
+            X509v3 Basic Constraints: 
+                CA:TRUE
+
+godard-tp
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                27:E2:DA:F0:D7:66:48:27:9B:65:B0:7C:24:26:78:B7:04:DA:7D:8A
+            X509v3 Authority Key Identifier: 
+                keyid:27:E2:DA:F0:D7:66:48:27:9B:65:B0:7C:24:26:78:B7:04:DA:7D:8A
+
+            X509v3 Basic Constraints: 
+                CA:TRUE
+
+CNRS2
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                50:97:B6:0D:F7:AC:33:17:AF:F1:1D:46:3C:6B:3B:FF:00:A0:E5:E5
+            X509v3 Authority Key Identifier: 
+                keyid:50:97:B6:0D:F7:AC:33:17:AF:F1:1D:46:3C:6B:3B:FF:00:A0:E5:E5
+                DirName:/C=FR/O=CNRS/CN=CNRS2
+                serial:00
+
+CNRS2-Standard
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                11:E3:D9:D1:52:47:1B:59:B1:3C:1B:78:66:6B:F4:A1:88:ED:0A:5B
+            X509v3 Authority Key Identifier: 
+                keyid:50:97:B6:0D:F7:AC:33:17:AF:F1:1D:46:3C:6B:3B:FF:00:A0:E5:E5
+                DirName:/C=FR/O=CNRS/CN=CNRS2
+                serial:00
+
+godard
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+            Netscape Cert Type: 
+                SSL Client, S/MIME, Object Signing
+            X509v3 Key Usage: critical
+                Digital Signature, Non Repudiation, Key Encipherment
+            Netscape Comment: 
+                Certificat CNRS2-Standard. Pour toute information se reporter http://igc.services.cnrs.fr/CNRS2-Standard/
+            X509v3 Subject Key Identifier: 
+                AD:CE:85:51:8C:61:B8:FD:F7:FE:67:91:C4:81:67:34:51:9D:D5:D3
+            X509v3 Authority Key Identifier: 
+                keyid:11:E3:D9:D1:52:47:1B:59:B1:3C:1B:78:66:6B:F4:A1:88:ED:0A:5B
+                DirName:/C=FR/O=CNRS/CN=CNRS2
+                serial:03
+
+
+g.ca se signe lui-même
+g-tp.ca est signé par g.ca
+g-tp se signe lui-même
